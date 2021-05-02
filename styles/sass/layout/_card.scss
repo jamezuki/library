@@ -1,0 +1,60 @@
+@use '../abstracts/variables' as *;
+
+.card {
+    color: $card-color;
+    background: $card-background;
+    display: inline-block;
+    width: 300px;
+    height: -moz-fit-content;
+    height: fit-content;
+    margin: 20px;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    transition: background-color 1s;
+    h2 {
+        max-width: 100%;
+        margin-bottom: 40px;
+        padding: 0;
+        line-height: 1;
+        word-wrap: break-word;
+    }
+    table {
+        width: 100%;
+        text-align: left;
+        word-wrap: break-word;
+        th {
+            width: 60px;
+        }
+        td {
+            max-width: 200px;
+        }
+    }
+    > div {
+        display: flex;
+        align-items: center;
+        margin-top: 30px;
+        > span {
+            margin-right: 10px;
+            font-size: 1.2rem;
+            font-weight: 600;
+        }
+        button {
+            color: $card-delete-button-color;
+            background: $card-delete-button-background;
+            width: 70px;
+            height: 35px;
+            margin-left: auto;
+            border: none;
+            border-radius: 5px;
+            font-family: $font-family;
+            font-size: 1rem;
+            font-weight: 600;
+        }
+    }
+}
+
+.read {
+    color: $card-read-color;
+    background: $card-read-background;
+}

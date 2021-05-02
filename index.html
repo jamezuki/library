@@ -6,14 +6,34 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="images/icon.png" type="image/png">
     <link rel="stylesheet" href="styles/master.css">
-    <title>Sass template</title>
+    <title>Library</title>
 </head>
 
 <body>
     <nav>
-        <a href="https://github.com/jamezuki/sass-template" target="_blank">GitHub</a>
+        <a href="https://github.com/jamezuki/library" target="_blank">GitHub</a>
     </nav>
-
+    <button id="new-book-button"><img src="images/new.svg" alt="&plus"></button>
+    <div id="new-book-dialog" class="dialog">
+        <form id="new-book-dialog__form" onsubmit="return false;">
+            <label id="new-book-dialog__title-label" for="new-book-dialog__title-input">Title:</label>
+            <input id="new-book-dialog__title-input" type="text" required>
+            <label id="new-book-dialog__author-label" for="new-book-dialog__author-input">Author:</label>
+            <input id="new-book-dialog__author-input" type="text" required>
+            <label id="new-book-dialog__pages-label" for="new-book-dialog__pages-input">Pages:</label>
+            <input id="new-book-dialog__pages-input" type="text">
+            <label id="new-book-dialog__read-label" for="new-book-dialog__read-input">Read:</label>
+            <label class="switch">
+                <input id="new-book-dialog__read-input" type="checkbox">
+                <span class="slider"></span>
+            </label>
+            <button id="new-book-dialog__submit-button" class="dialog-button" type="submit">Submit</button>
+            <button id="new-book-dialog__cancel-button" class="dialog-button">Cancel</button>
+        </form>
+    </div>
+    <script src="https://www.gstatic.com/firebasejs/8.5.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.4.3/firebase-database.js"></script>
+    <script src="scripts/script.js"></script>
 </body>
 
 </html>

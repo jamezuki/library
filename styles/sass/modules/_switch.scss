@@ -1,0 +1,44 @@
+@use '../abstracts/variables' as *;
+
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+    input {
+        display: none;
+        &:checked + .slider {
+            background-color: $switch-on;
+        }
+        &:checked + .slider:before {
+            transform: translateX(26px);
+        }
+    }
+    .slider {
+        background-color: $switch-off;
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        cursor: pointer;
+        transition: 0.4s;
+        &:before {
+            background-color: $switch-slider;
+            position: absolute;
+            content: "";
+            width: 26px;
+            height: 26px;
+            left: 4px;
+            bottom: 4px;
+            transition: 0.4s;
+        }
+        &.round {
+            border-radius: 34px;
+        }
+
+        &.round:before {
+            border-radius: 50%;
+        }
+    }
+}

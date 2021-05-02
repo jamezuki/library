@@ -1,13 +1,29 @@
-@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Pangolin&display=swap");
 
-$font-family: "Roboto Mono", monospace;
+$font-family: "Pangolin", cursive;
 $root-font-size: 14px;
 
 $nav-offset: 30px;
+$new-button-offset: 40px;
 
-$color-1: #333;
-$color-2: #bbb;
-$color-3: #ddd;
-$color-4: #eee;
-$strong: #940000;
-$anchor: #0395f0;
+$background: #222;
+
+$new-button-color: #eee;
+$new-button-background: #e900af;
+$new-button-hover: #adff2f;
+
+$card-color: #333;
+$card-background: #eee;
+$card-read-color: #eee;
+$card-read-background: #444;
+$card-delete-button-color: #eee;
+$card-delete-button-background: #ba1616;
+
+$switch-slider: #fff;
+$switch-off: #ccc;
+$switch-on: #66bb6a;
+
+$dialog-color: #eee;
+$dialog-background: #333;
+$dialog-button-color: #eee;
+$dialog-button-background: #e900af;

@@ -21,18 +21,14 @@ body {
 }
 
 body {
-    color: $color-1;
-    background: $color-4;
+    background: $background;
     display: flex;
-    flex-direction: column;
-    padding: $nav-offset 20px 20px 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+    height: -moz-fit-content;
+    height: fit-content;
+    padding-top: $new-button-offset;
     font-family: $font-family;
     line-height: 1.5;
 }
 
-@media (orientation: portrait) {
-    body {
-        height: -moz-fit-content;
-        height: fit-content;
-    }
-}

@@ -1,0 +1,29 @@
+@use '../abstracts/variables' as *;
+
+#new-book-button {
+    color: $new-button-color;
+    background: $new-button-background;
+    position: fixed;
+    top: 10px;
+    left: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80px;
+    height: 80px;
+    border: none;
+    border-radius: 50%;
+    font-size: 4rem;
+    line-height: 1;
+    box-shadow: 0 1px 3px 1px #333;
+    z-index: 2;
+    img {
+        width: 30px;
+        height: 30px;
+    }
+    &:hover {
+        background: lighten($new-button-background, 10%);
+        transform: scale(1.1);
+        transition: 0.2s linear;
+    }
+}

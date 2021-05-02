@@ -1,0 +1,33 @@
+@use '../abstracts/variables' as *;
+
+.dialog {
+    color: $dialog-color;
+    background: $dialog-background;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: none;
+    width: 100%;
+    max-width: 400px;
+    height: -moz-fit-content;
+    height: fit-content;
+    padding: 20px;
+    border: 1px solid;
+    box-shadow: 2px 2px 5px 1px #333;
+    z-index: 2;
+}
+
+.dialog-button {
+    color: $dialog-button-color;
+    background: $dialog-button-background;
+    width: 100px;
+    height: 40px;
+    border: none;
+    font-family: $font-family;
+    font-size: 1.2rem;
+    &:hover,
+    &:active {
+        background: lighten($dialog-button-background, 20%);
+    }
+}
